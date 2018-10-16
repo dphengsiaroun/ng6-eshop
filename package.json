@@ -24,6 +24,7 @@
     "@types/jquery": "^3.3.18",
     "@types/select2": "^4.0.47",
     "@types/slick-carousel": "^1.6.32",
+    "animsition": "^4.0.2",
     "core-js": "^2.5.4",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",

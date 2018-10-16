@@ -28,9 +28,11 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/animsition/dist/css/animsition.min.css",
               "node_modules/select2/dist/css/select2.min.css"
             ],
             "scripts": [
+              "node_modules/animsition/dist/js/animsition.min.js",
               "node_modules/select2/dist/js/select2.min.js"
             ]
           },
