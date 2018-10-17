@@ -13,6 +13,7 @@ import { SidebarCartComponent } from './components/sidebar-cart/sidebar-cart.com
 import { SidebarNavComponent } from './components/sidebar-nav/sidebar-nav.component';
 import { ModalProductComponent } from './components/modal-product/modal-product.component';
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
+import { ModalSearchComponent } from './components/modal-search/modal-search.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
     SidebarCartComponent,
     SidebarNavComponent,
     ModalProductComponent,
-    BackToTopComponent
+    BackToTopComponent,
+    ModalSearchComponent
   ],
   imports: [
     BrowserModule,
