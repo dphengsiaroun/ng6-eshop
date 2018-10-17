@@ -30,6 +30,7 @@
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
+              // "node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css",
               "node_modules/animsition/dist/css/animsition.min.css",
               "node_modules/select2/dist/css/select2.min.css",
               "node_modules/slick-carousel/slick/slick.css",
