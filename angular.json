@@ -30,14 +30,16 @@
               "src/styles.scss",
               "node_modules/animsition/dist/css/animsition.min.css",
               "node_modules/select2/dist/css/select2.min.css",
-              "node_modules/slick-carousel/slick/slick.css"
+              "node_modules/slick-carousel/slick/slick.css",
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css"
               // "node_modules/magnific-popup/dist/magnific-popup.css"
             ],
             "scripts": [
               "node_modules/animsition/dist/js/animsition.min.js",
               "node_modules/select2/dist/js/select2.min.js",
               "node_modules/slick-carousel/slick/slick.min.js",
-              "node_modules/isotope-layout/dist/isotope.pkgd.min.js"
+              "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"
               // "node_modules/magnific-popup/dist/jquery.magnific-popup.js"
             ]
           },
