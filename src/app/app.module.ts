@@ -14,6 +14,10 @@ import { SidebarNavComponent } from './components/ui/sidebar-nav/sidebar-nav.com
 import { ModalProductComponent } from './components/ui/modal-product/modal-product.component';
 import { BackToTopComponent } from './components/ui/back-to-top/back-to-top.component';
 import { ModalSearchComponent } from './components/ui/modal-search/modal-search.component';
+import { ContactComponent } from './components/screens/contact/contact.component';
+import { AboutComponent } from './components/screens/about/about.component';
+import { CatalogMenComponent } from './components/screens/catalog-men/catalog-men.component';
+import { HeaderMainComponent } from './components/layout/header-main/header-main.component';
 
 @NgModule({
 	declarations: [
@@ -28,7 +32,11 @@ import { ModalSearchComponent } from './components/ui/modal-search/modal-search.
 		SidebarNavComponent,
 		ModalProductComponent,
 		BackToTopComponent,
-		ModalSearchComponent
+		ModalSearchComponent,
+		ContactComponent,
+		AboutComponent,
+		CatalogMenComponent,
+		HeaderMainComponent
 	],
 	imports: [
 		BrowserModule,

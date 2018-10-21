@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'app-header-main',
+  templateUrl: './header-main.component.html',
+  styleUrls: ['./header-main.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderMainComponent implements OnInit {
 
   constructor() { }
 
@@ -92,7 +91,6 @@ export class HeaderComponent implements OnInit {
     $('.container-search-header').on('click', function (e) {
       e.stopPropagation();
     });
-
   }
 
 }

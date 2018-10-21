@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/screens/home/home.component';
-// import { ProductDetailComponent } from './views/product-detail/product-detail.component';
-// import { PostsComponent } from './posts/posts.component';
+import { ContactComponent } from './components/screens/contact/contact.component';
+import { AboutComponent } from './components/screens/about/about.component';
+import { CatalogMenComponent } from './components/screens/catalog-men/catalog-men.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
   },
-  // {
-  //   path: 'detail/:id',
-  //   component: ProductDetailComponent
-  // },
-  // {
-  //   path: 'posts',
-  //   component: PostsComponent
-  // },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'catalog-men',
+    component: CatalogMenComponent
+  },
 ];
 
 @NgModule({
