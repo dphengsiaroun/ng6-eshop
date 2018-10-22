@@ -37,7 +37,7 @@
 .wrap-search-header {
   width: 960px;
   max-width: 100%;
-  height: 120px;
+  height: 100px;
   border-bottom: 2px solid #fff;
   color: white;
 }
@@ -45,19 +45,20 @@
 /*---------------------------------------------*/
 .wrap-search-header input {
   font-family: Poppins-ExtraLight;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1.2;
-  color: #fff;
-
-  padding: 0px 30px 0px 0px;
+  color: #fff !important;
   width: calc(100% - 70px);
   height: 100%;
   background-color: transparent;
+  &::placeholder {
+    color: white;
+  }
 }
 
 .wrap-search-header button {
   font-size: 50px;
-  color: #333;
+  color: #fff;
   width: 70px;
   height: 100%;
 }

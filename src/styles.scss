@@ -82,12 +82,12 @@ body, html {
 	font-family: Arial, sans-serif;
 	font-size: 15px;
 	color: #666666;
-
 	height: 100%;
 	background-color: #fff;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*---------------------------------------------*/
@@ -4021,7 +4021,7 @@ iframe {border: none;}
 }
 
 .ltext-104 {
-  font-family: Poppins-Bold;
+  font-family: 'Raleway';
   font-size: 60px;
   line-height: 1.1;
   text-transform: uppercase;

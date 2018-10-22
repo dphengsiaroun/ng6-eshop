@@ -4,6 +4,7 @@ import { HomeComponent } from './components/screens/home/home.component';
 import { ContactComponent } from './components/screens/contact/contact.component';
 import { AboutComponent } from './components/screens/about/about.component';
 import { CatalogMenComponent } from './components/screens/catalog-men/catalog-men.component';
+import { CatalogWomenComponent } from './components/screens/catalog-women/catalog-women.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'catalog-men',
     component: CatalogMenComponent
+  },
+  {
+    path: 'catalog-women',
+    component: CatalogWomenComponent
   },
 ];
 
