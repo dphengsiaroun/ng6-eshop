@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-newest',
-  templateUrl: './newest.component.html',
-  styleUrls: ['./newest.component.scss']
+  selector: 'app-newness',
+  templateUrl: './newness.component.html',
+  styleUrls: ['./newness.component.scss']
 })
-export class NewestComponent implements OnInit {
+export class NewnessComponent implements OnInit {
 
   constructor() { }
 

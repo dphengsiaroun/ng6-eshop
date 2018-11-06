@@ -20,7 +20,7 @@ import { MensComponent } from './components/screens/mens/mens.component';
 import { HeaderMainComponent } from './components/layout/header-main/header-main.component';
 import { WomensComponent } from './components/screens/womens/womens.component';
 import { BlogComponent } from './components/ui/blog/blog.component';
-import { NewestComponent } from './components/screens/newest/newest.component';
+import { NewnessComponent } from './components/screens/newness/newness.component';
 import { KidsComponent } from './components/screens/kids/kids.component';
 
 @NgModule({
@@ -43,7 +43,7 @@ import { KidsComponent } from './components/screens/kids/kids.component';
 		HeaderMainComponent,
 		WomensComponent,
 		BlogComponent,
-		NewestComponent,
+		NewnessComponent,
 		KidsComponent
 	],
 	imports: [

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/screens/home/home.component';
 import { ContactComponent } from './components/screens/contact/contact.component';
 import { AboutComponent } from './components/screens/about/about.component';
-import { NewestComponent } from './components/screens/newest/newest.component';
+import { NewnessComponent } from './components/screens/newness/newness.component';
 import { MensComponent } from './components/screens/mens/mens.component';
 import { WomensComponent } from './components/screens/womens/womens.component';
 import { KidsComponent } from './components/screens/kids/kids.component';
@@ -22,8 +22,8 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'newest',
-    component: NewestComponent
+    path: 'newness',
+    component: NewnessComponent
   },
   {
     path: 'mens',
