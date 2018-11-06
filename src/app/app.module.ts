@@ -22,6 +22,7 @@ import { WomensComponent } from './components/screens/womens/womens.component';
 import { BlogComponent } from './components/ui/blog/blog.component';
 import { NewnessComponent } from './components/screens/newness/newness.component';
 import { KidsComponent } from './components/screens/kids/kids.component';
+import { ProductDetailComponent } from './components/screens/product-detail/product-detail.component';
 
 @NgModule({
 	declarations: [
@@ -44,7 +45,8 @@ import { KidsComponent } from './components/screens/kids/kids.component';
 		WomensComponent,
 		BlogComponent,
 		NewnessComponent,
-		KidsComponent
+		KidsComponent,
+		ProductDetailComponent
 	],
 	imports: [
 		BrowserModule,
