@@ -9,31 +9,6 @@ export class ProductDetailComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    /*==================================================================
-      [ +/- num product ]*/
-    $(".btn-num-product-down").on("click", function() {
-      const numProduct = Number(
-        $(this)
-          .next()
-          .val()
-      );
-      if (numProduct > 0) {
-        $(this)
-          .next()
-          .val(numProduct);
-      }
-    });
-
-    $(".btn-num-product-up").on("click", function() {
-      const numProduct = Number(
-        $(this)
-          .prev()
-          .val()
-      );
-      $(this)
-        .prev()
-        .val(numProduct);
-    });
 
     /*==================================================================
     [ Rating ]*/
@@ -75,17 +50,8 @@ export class ProductDetailComponent implements OnInit {
           $(item[j]).removeClass("zmdi-star");
         }
       });
-    });
-
-    /*==================================================================
-        [ js-select2 ]*/
-    $(".js-select2").each(function() {
-      (<any>$(this)).select2({
-        minimumResultsForSearch: 20,
-        dropdownParent: $(this).next(".dropDownSelect2")
-      });
-    });
-
+	});
+	
     /*==================================================================
         [ MagnificPopup ]*/
     $(".gallery-lb").each(function() {
@@ -204,38 +170,5 @@ export class ProductDetailComponent implements OnInit {
       (<any>$(nameTab).find(".slick2")).slick("reinit");
     });
 
-    /*==================================================================
-        [ Slick3 ]*/
-    $(".wrap-slick3").each(function() {
-      (<any>$(this).find(".slick3")).slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        infinite: true,
-        autoplay: false,
-        autoplaySpeed: 6000,
-
-        arrows: true,
-        appendArrows: $(this).find(".wrap-slick3-arrows"),
-        prevArrow:
-          '<button class="arrow-slick3 prev-slick3"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
-        nextArrow:
-          '<button class="arrow-slick3 next-slick3"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
-
-        dots: true,
-        appendDots: $(this).find(".wrap-slick3-dots"),
-        dotsClass: "slick3-dots",
-        customPaging: function(slick, index) {
-          console.log("slick", slick);
-          const portrait = $(slick.$slides[index]).data("thumb");
-          console.log("portrait", portrait);
-          return (
-            '<img src=" ' +
-            portrait +
-            ' "/><div class="slick3-dot-overlay"></div>'
-          );
-        }
-      });
-    });
   }
 }
