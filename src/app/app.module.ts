@@ -16,10 +16,12 @@ import { BackToTopComponent } from './components/ui/back-to-top/back-to-top.comp
 import { ModalSearchComponent } from './components/ui/modal-search/modal-search.component';
 import { ContactComponent } from './components/screens/contact/contact.component';
 import { AboutComponent } from './components/screens/about/about.component';
-import { CatalogMenComponent } from './components/screens/catalog-men/catalog-men.component';
+import { MensComponent } from './components/screens/mens/mens.component';
 import { HeaderMainComponent } from './components/layout/header-main/header-main.component';
-import { CatalogWomenComponent } from './components/screens/catalog-women/catalog-women.component';
+import { WomensComponent } from './components/screens/womens/womens.component';
 import { BlogComponent } from './components/ui/blog/blog.component';
+import { NewestComponent } from './components/screens/newest/newest.component';
+import { KidsComponent } from './components/screens/kids/kids.component';
 
 @NgModule({
 	declarations: [
@@ -37,10 +39,12 @@ import { BlogComponent } from './components/ui/blog/blog.component';
 		ModalSearchComponent,
 		ContactComponent,
 		AboutComponent,
-		CatalogMenComponent,
+		MensComponent,
 		HeaderMainComponent,
-		CatalogWomenComponent,
-		BlogComponent
+		WomensComponent,
+		BlogComponent,
+		NewestComponent,
+		KidsComponent
 	],
 	imports: [
 		BrowserModule,

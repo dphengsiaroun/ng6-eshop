@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-catalog-women',
-  templateUrl: './catalog-women.component.html',
-  styleUrls: ['./catalog-women.component.scss']
+  selector: 'app-newest',
+  templateUrl: './newest.component.html',
+  styleUrls: ['./newest.component.scss']
 })
-export class CatalogWomenComponent implements OnInit {
+export class NewestComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
     /*==================================================================
-[ Isotope ]*/
+ [ Isotope ]*/
     const $topeContainer = $('.isotope-grid');
     const $filter = $('.filter-tope-group');
 
@@ -51,7 +51,7 @@ export class CatalogWomenComponent implements OnInit {
     });
 
     /*==================================================================
-   [ Filter / Search product ]*/
+  [ Filter / Search product ]*/
     $('.js-show-filter').on('click', function () {
       $(this).toggleClass('show-filter');
       $('.panel-filter').slideToggle(400);
@@ -73,7 +73,7 @@ export class CatalogWomenComponent implements OnInit {
     });
 
     /*==================================================================
-   [ Add wish ]*/
+  [ Add wish ]*/
     $('.js-addwish-b2').on('click', function (e) {
       e.preventDefault();
     });
