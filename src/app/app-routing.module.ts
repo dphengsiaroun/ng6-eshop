@@ -8,6 +8,7 @@ import { MensComponent } from './components/screens/mens/mens.component';
 import { WomensComponent } from './components/screens/womens/womens.component';
 import { KidsComponent } from './components/screens/kids/kids.component';
 import { ProductDetailComponent } from './components/screens/product-detail/product-detail.component';
+import { CartComponent } from './components/screens/cart/cart.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'details',
     component: ProductDetailComponent
+  },
+  {
+    path: 'cart',
+    component: CartComponent
   },
 ];
 
