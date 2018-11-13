@@ -8,6 +8,7 @@ export const PRODUCTS: Product[] = [
         category: 'Homme',
         subCategory: 'Prêt-à-porter',
         brand: 'Balmain',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: '60% cotton',
             color: 'White',
@@ -22,6 +23,7 @@ export const PRODUCTS: Product[] = [
         category: 'Homme',
         subCategory: 'Chaussures',
         brand: 'Balenciaga',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: '60% synthétique',
             color: 'Black',
@@ -36,6 +38,7 @@ export const PRODUCTS: Product[] = [
         category: 'Homme',
         subCategory: 'Montres',
         brand: 'Rolex',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Acier',
             color: 'Gris',
@@ -50,6 +53,7 @@ export const PRODUCTS: Product[] = [
         category: 'Homme',
         subCategory: 'Prêt-à-porter',
         brand: 'Givenchy',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Coton',
             color: 'White',
@@ -64,6 +68,7 @@ export const PRODUCTS: Product[] = [
         category: 'Homme',
         subCategory: 'Prêt-à-porter',
         brand: 'Givenchy',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Coton',
             color: 'White',
@@ -78,6 +83,7 @@ export const PRODUCTS: Product[] = [
         category: 'Femme',
         subCategory: 'Prêt-à-porter',
         brand: 'Balmain',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: '60% cotton',
             color: 'White',
@@ -92,6 +98,7 @@ export const PRODUCTS: Product[] = [
         category: 'Femme',
         subCategory: 'Chaussures',
         brand: 'Balenciaga',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: '60% synthétique',
             color: 'Black',
@@ -106,6 +113,7 @@ export const PRODUCTS: Product[] = [
         category: 'Femme',
         subCategory: 'Montres',
         brand: 'Rolex',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Acier',
             color: 'Gris',
@@ -120,6 +128,7 @@ export const PRODUCTS: Product[] = [
         category: 'Femme',
         subCategory: 'Prêt-à-porter',
         brand: 'Givenchy',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Coton',
             color: 'White',
@@ -134,6 +143,7 @@ export const PRODUCTS: Product[] = [
         category: 'Femme',
         subCategory: 'Prêt-à-porter',
         brand: 'Givenchy',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Coton',
             color: 'White',
@@ -148,6 +158,7 @@ export const PRODUCTS: Product[] = [
         category: 'Enfant',
         subCategory: 'Prêt-à-porter',
         brand: 'Balmain',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: '60% cotton',
             color: 'White',
@@ -162,6 +173,7 @@ export const PRODUCTS: Product[] = [
         category: 'Enfant',
         subCategory: 'Chaussures',
         brand: 'Balenciaga',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: '60% synthétique',
             color: 'Black',
@@ -175,7 +187,8 @@ export const PRODUCTS: Product[] = [
         name: 'Montres',
         category: 'Enfant',
         subCategory: 'Montres',
-        brand: 'Rolex',
+        brand: 'Swatch',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Acier',
             color: 'Gris',
@@ -190,6 +203,7 @@ export const PRODUCTS: Product[] = [
         category: 'Enfant',
         subCategory: 'Prêt-à-porter',
         brand: 'Givenchy',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Coton',
             color: 'White',
@@ -204,6 +218,7 @@ export const PRODUCTS: Product[] = [
         category: 'Enfant',
         subCategory: 'Prêt-à-porter',
         brand: 'Givenchy',
+        description: 'Survêtement Givenchy en très bonne état porté 2 fois',
         feature: [{
             material: 'Coton',
             color: 'White',

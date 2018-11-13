@@ -1,4 +1,8 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from '@angular/router';
+
+import { ProductService } from '../../../service/product.service';
+import { Product } from "../../../product";
 
 @Component({
   selector: "app-product-detail",
@@ -6,9 +10,35 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./product-detail.component.scss"]
 })
 export class ProductDetailComponent implements OnInit {
-  constructor() {}
+  product: Product;
+
+  constructor(private route: ActivatedRoute, private productService: ProductService) {}
+
+  getProduct(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.productService.getProduct(id)
+      .subscribe(product => this.product = product);
+  }
+
+  /*==================================================================
+  [ Add Cart ]*/
+  addCart() {
+    $(".js-addcart-detail").each(function() {
+      var nameProduct = $(this)
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .find(".js-name-detail")
+        .html();
+      $(this).on("click", function() {
+        swal(nameProduct, "est ajouté à votre panier !", "success");
+      });
+    });
+  }
 
   ngOnInit() {
+    this.getProduct();
 
     /*==================================================================
     [ Rating ]*/
@@ -95,25 +125,10 @@ export class ProductDetailComponent implements OnInit {
         .html();
 
       $(this).on("click", function() {
-        swal(nameProduct, "is added to wishlist !", "success");
+        swal(nameProduct, "est ajouté à vos favoris !", "success");
 
         $(this).addClass("js-addedwish-detail");
         $(this).off("click");
-      });
-    });
-
-    /*==================================================================
-    [ Add Cart ]*/
-    $(".js-addcart-detail").each(function() {
-      var nameProduct = $(this)
-        .parent()
-        .parent()
-        .parent()
-        .parent()
-        .find(".js-name-detail")
-        .html();
-      $(this).on("click", function() {
-        swal(nameProduct, "is added to cart !", "success");
       });
     });
 
