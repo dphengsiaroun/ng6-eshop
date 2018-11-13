@@ -1,17 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Product } from '../../../product';
+import { ProductService } from '../../../service/product.service';
+
 @Component({
   selector: 'app-mens',
   templateUrl: './mens.component.html',
   styleUrls: ['./mens.component.scss']
 })
 export class MensComponent implements OnInit {
+  products: Product[];
 
-  constructor() { }
+  constructor(private productService: ProductService) { }
+
+  getProducts(): void {
+    this.productService.getProducts()
+    .subscribe(products => this.products = products);
+  }
 
   ngOnInit() {
-    /*==================================================================
- [ Isotope ]*/
+  /*==================================================================
+  [ GET PRODUCTS ]*/
+    this.getProducts();
+
+  /*==================================================================
+  [ Isotope ]*/
     const $topeContainer = $('.isotope-grid');
     const $filter = $('.filter-tope-group');
 
@@ -50,7 +63,7 @@ export class MensComponent implements OnInit {
       });
     });
 
-    /*==================================================================
+  /*==================================================================
   [ Filter / Search product ]*/
     $('.js-show-filter').on('click', function () {
       $(this).toggleClass('show-filter');
@@ -72,7 +85,7 @@ export class MensComponent implements OnInit {
       }
     });
 
-    /*==================================================================
+  /*==================================================================
   [ Add wish ]*/
     $('.js-addwish-b2').on('click', function (e) {
       e.preventDefault();
@@ -84,6 +97,7 @@ export class MensComponent implements OnInit {
         .parent()
         .find('.js-name-b2')
         .html();
+      console.log('nameProduct', nameProduct);
       $(this).on('click', function () {
         swal(nameProduct, 'is added to wishlist !', 'success');
 

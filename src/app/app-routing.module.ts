@@ -40,7 +40,7 @@ const routes: Routes = [
     component: KidsComponent
   },
   {
-    path: 'details',
+    path: 'detail/:id',
     component: ProductDetailComponent
   },
   {
