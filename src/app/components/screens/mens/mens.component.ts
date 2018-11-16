@@ -18,7 +18,7 @@ export class MensComponent implements OnInit {
   getProducts(): void {
     this.productService
       .getProducts()
-      .subscribe(products => (this.products = products));
+      .subscribe(products => this.products = products);
   }
 
   /*==================================================================

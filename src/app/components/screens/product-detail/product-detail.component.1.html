@@ -19,11 +19,6 @@
 		{{product.category}}
 	  <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
 	</a>
-	
-	<a routerLink="/mens" class="stext-109 cl8 hov-cl1 trans-04">
-		{{product.subCategory}}
-	  <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
-	</a>
 
 	<span class="stext-109 cl4">
 		{{product.name}}
@@ -91,22 +86,23 @@
 					{{product.description}}
 				</p>
 
-						<!--  -->
-						<div class="p-t-33">
-	
-								<div class="flex-w flex-r-m p-b-10">
-									<div class="size-204 flex-w flex-m respon6-next">
-										<button (click)="this.addCart()" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-											Ajouter au panier
-										</button>
-									</div>
-								</div>	
-							</div>
+				<!--  -->
+				<div class="p-t-33">
+					<div class="flex-w flex-r-m p-b-10">
+					<div class="size-204 flex-w flex-m respon6-next">
+						<div class="wrap-num-product flex-w m-r-20 m-tb-10">
+
+						<button (click)="this.addCart()" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
+						Ajouter au panier
+						</button>
+					</div>
+					</div>
+				</div>
 
 				<!--  -->
 				<div class="flex-w flex-m p-l-100 p-t-40 respon7">
 					<div class="flex-m bor9 p-r-10 m-r-11">
-					<a href="" (click)="this.addWish()" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100"
+					<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100"
 						data-tooltip="Add to Wishlist">
 						<i class="zmdi zmdi-favorite"></i>
 					</a>
@@ -161,7 +157,7 @@
 				<div class="tab-pane fade" id="information" role="tabpanel">
 					<div class="row">
 					<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
-						<ul class="p-lr-28 p-lr-15-sm" *ngFor="let feature of product.feature">
+						<ul class="p-lr-28 p-lr-15-sm">
 
 						<li class="flex-w flex-t p-b-7">
 							<span class="stext-102 cl3 size-205">
@@ -169,7 +165,7 @@
 							</span>
 
 							<span class="stext-102 cl6 size-206">
-								{{feature.material}}
+								{{product.feature.material}}
 							</span>
 						</li>
 
@@ -179,17 +175,17 @@
 							</span>
 
 							<span class="stext-102 cl6 size-206">
-								{{feature.color}}
+								{{product.feature.color}}
 							</span>
 						</li>
 
-						<li *ngIf="feature.size" class="flex-w flex-t p-b-7">
+						<li class="flex-w flex-t p-b-7">
 							<span class="stext-102 cl3 size-205">
 								Taille
 							</span>
 
 							<span class="stext-102 cl6 size-206">
-								{{feature.size}}
+								{{product.feature.size}}
 							</span>
 						</li>
 						</ul>
@@ -295,6 +291,7 @@
 			Categories : Jacket, Men
 			</span>
 		</div>
+	</div>
 </section>
 
 

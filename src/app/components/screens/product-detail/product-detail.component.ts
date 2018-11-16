@@ -17,12 +17,15 @@ export class ProductDetailComponent implements OnInit {
   getProduct(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.productService.getProduct(id)
-      .subscribe(product => this.product = product);
+      .subscribe(product => {
+        this.product = product;
+        console.log('product', this.product);
+      });
   }
 
   /*==================================================================
   [ Add Cart ]*/
-  addCart() {
+  addCart(): void {
     $(".js-addcart-detail").each(function() {
       var nameProduct = $(this)
         .parent()
@@ -33,6 +36,46 @@ export class ProductDetailComponent implements OnInit {
         .html();
       $(this).on("click", function() {
         swal(nameProduct, "est ajouté à votre panier !", "success");
+      });
+    });
+  }
+
+  /*==================================================================
+  [ Add Wish ]*/
+  addWish(): void {
+    event.preventDefault();
+    console.log('addWish');
+    $(".js-addwish-b2, .js-addwish-detail").on("click", function(e) {
+      e.preventDefault();
+    });
+
+    $(".js-addwish-b2").each(function() {
+      var nameProduct = $(this)
+        .parent()
+        .parent()
+        .find(".js-name-b2")
+        .html();
+      $(this).on("click", function() {
+        swal(nameProduct, "is added to wishlist !", "success");
+
+        $(this).addClass("js-addedwish-b2");
+        $(this).off("click");
+      });
+    });
+
+    $(".js-addwish-detail").each(function() {
+      var nameProduct = $(this)
+        .parent()
+        .parent()
+        .parent()
+        .find(".js-name-detail")
+        .html();
+
+      $(this).on("click", function() {
+        swal(nameProduct, "est ajouté à vos favoris !", "success");
+
+        $(this).addClass("js-addedwish-detail");
+        $(this).off("click");
       });
     });
   }
@@ -93,42 +136,6 @@ export class ProductDetailComponent implements OnInit {
           enabled: true
         },
         mainClass: "mfp-fade"
-      });
-    });
-
-    /*==================================================================
-    [ Add Wish ]*/
-    $(".js-addwish-b2, .js-addwish-detail").on("click", function(e) {
-      e.preventDefault();
-    });
-
-    $(".js-addwish-b2").each(function() {
-      var nameProduct = $(this)
-        .parent()
-        .parent()
-        .find(".js-name-b2")
-        .html();
-      $(this).on("click", function() {
-        swal(nameProduct, "is added to wishlist !", "success");
-
-        $(this).addClass("js-addedwish-b2");
-        $(this).off("click");
-      });
-    });
-
-    $(".js-addwish-detail").each(function() {
-      var nameProduct = $(this)
-        .parent()
-        .parent()
-        .parent()
-        .find(".js-name-detail")
-        .html();
-
-      $(this).on("click", function() {
-        swal(nameProduct, "est ajouté à vos favoris !", "success");
-
-        $(this).addClass("js-addedwish-detail");
-        $(this).off("click");
       });
     });
 

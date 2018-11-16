@@ -167,9 +167,7 @@ export class ModalProductComponent implements OnInit {
 		appendDots: $(this).find('.wrap-slick3-dots'),
 		dotsClass: 'slick3-dots',
 		customPaging: function(slick, index) {
-		  console.log('slick', slick);
 		  const portrait = $(slick.$slides[index]).data('thumb');
-		  console.log('portrait', portrait);
 		  return (
 			'<img src=" ' +
 			portrait +
